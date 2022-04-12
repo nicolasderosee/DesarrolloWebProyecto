@@ -48,6 +48,17 @@ header h1{
     color: #FFFFFF;
 }
 
+/*Transformaciones menu*/
+
+.menu ul li{
+    transition: 1s;
+}
+
+
+.menu ul li:hover{
+    transform: scale(1.1);
+}
+
 /*CSS del index*/
 
 .mainIndex{
@@ -123,6 +134,16 @@ header h1{
 .img {
     width: 330px;
     height: 340px;
+}
+
+/*transformaciones de img de productos*/
+
+.img{
+    transition: 0.8s;
+}
+
+.img:hover{
+    transform: scale(1.1);
 }
 
 /*CSS de servicios*/
