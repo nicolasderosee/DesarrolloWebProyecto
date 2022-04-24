@@ -52,7 +52,7 @@
     }
 }
 
-//empieza SCSS del index
+//CSS DE INDEX
 
 .navbar-light .navbar-brand{
     color: $color-principal;
@@ -131,7 +131,7 @@
 
 //----------------------------De acá para abajo no modifique todavía el CSS desde SCSS ---------------------------
 
-/*CSS de productos*/
+/*CSS DE PRODUCTOS*/
 
 /*GRID DE PRODUCTOS*/
 
@@ -193,7 +193,7 @@
     height: 340px;
 }
 
-/*transformaciones de img de productos*/
+/*TRANSFORMACIONES DE PRODUCTOS*/
 
 .img{
     transition: 0.8s;
@@ -203,36 +203,23 @@
     transform: scale(1.1);
 }
 
-/*CSS de servicios*/
+/*FIN TRANSFORMACIONES DE PRODUCTOS*/
 
-.mainServicios{
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
+/*FIN DE CSS DE PRODUCTOS*/
+
+/*CSS DE SERVICIOS*/
+
+.cardTransform{
+    transition: 0.8s;
 }
 
-.pServicios{
-    display: inline-block;
-    font-size: 20px;
-    color: #C5C0C0;
-    margin: 30px;
-    padding: 30px;
+.cardTransform:hover{
+    transform: scale(1.1);
 }
 
-.imgServicios{
-    margin: 20px;
-    padding: 30px;
-    width: 700px;
-}
+/**FiN DE CSS SERVICIOS/
 
-.h2Servicios{
-    color: #EEECED;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-}
-
-/*CSS de contacto*/
+/*CSS DE CONTACTO*/
 
 .mainContacto{
     padding: 10px;
@@ -290,7 +277,9 @@
     background-color: #FFFFFF;
 }
 
-/*CSS de info*/
+/*FIN CSS DE CONTACTO*/
+
+/*CSS DE INFO*/
 
 .headerInfo{
     display: block;
@@ -441,6 +430,9 @@
     }
 
 }
+
+/*FIN DE MEDIA QUERIES DE INFO */
+/*FIN DE CSS DE INFO */
 
 /*CSS del footer para todas las páginas*/
 
