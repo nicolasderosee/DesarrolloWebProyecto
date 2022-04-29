@@ -39,12 +39,15 @@
     .menu ul li:hover {
       transform: scale(1.1); }
 
+.bg-transparent {
+  background-color: transparent; }
+
 .navbar-light .navbar-brand {
   color: #FFDCEB; }
 
-.navbar-brand {
+.logo {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   padding: 10px;
   margin: 20px; }
@@ -52,13 +55,14 @@
 .nav-item {
   text-transform: uppercase; }
 
-.indexH {
+.textIndex {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  font-size: 30px;
   color: #232323;
   padding: 1rem; }
 
-.card {
+.card, .indexIframe {
   border-radius: 10px; }
 
 .card-img-top:hover {
@@ -72,9 +76,6 @@
     color: #FFFFFF;
     background-color: #FFEBF8;
     border-color: #FFEBF8; }
-
-.indexIframe {
-  border-radius: 10px; }
 
 .footerIndex {
   width: 100%;
@@ -95,7 +96,7 @@
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
-  color: black; }
+  color: #232323; }
 
 .bi-instagram:hover {
   color: #FFFFFF; }
@@ -157,6 +158,20 @@
 /*FIN TRANSFORMACIONES DE PRODUCTOS*/
 /*FIN DE CSS DE PRODUCTOS*/
 /*CSS DE SERVICIOS*/
+.textServicios {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #232323;
+  padding: 1rem; }
+
+.textContacto {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #232323;
+  padding: 1rem; }
+
 .cardTransform {
   transition: 0.8s; }
 

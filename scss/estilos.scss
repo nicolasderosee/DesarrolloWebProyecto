@@ -14,12 +14,12 @@
 }
 
 .headerComun{
-    color: $color-fondo;
+    color: nth($colores, 1);
     display: flex;  
     justify-content: space-between;
     h1{
         text-align: center;
-        color: $color-principal;
+        color: nth($colores, 2);
         font-size: 3rem;
         text-transform: uppercase;
         padding: 10px;
@@ -34,7 +34,7 @@
         list-style: none;
         margin: 30px;
         li{
-            background-color: $color-principal;
+            background-color: nth($colores, 2);
             font-size: 20px;
             text-transform: uppercase;
             margin: 15px;
@@ -43,7 +43,7 @@
             transition: 1s;
             a{
                 text-decoration: none;
-                color: $color-fondo;
+                color: nth($colores, 1);
             }
             &:hover{
                 transform: scale(1.1);
@@ -52,57 +52,77 @@
     }
 }
 
-//CSS DE INDEX
-
-.navbar-light .navbar-brand{
-    color: $color-principal;
-}
-
-.navbar-brand{
-    text-align: center;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 20px;
-}
-
-.nav-item{
-    text-transform: uppercase;
-}
-
-.indexH{
+@mixin textProp{
     font-family: $fuente-secundaria;
     text-transform: uppercase;
-    color: #232323;
+    font-size: ($medidaH2 - 30) * 1;
+    color: nth($colores, 4);
     padding: 1rem;
 }
 
-.card{
+//CSS DE INDEX
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.navbar-light .navbar-brand{
+    color: nth($colores, 2);
+}
+
+.logo{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 20px;       
+}
+
+.nav-item {
+    text-transform: uppercase; 
+}
+
+.textIndex{
+    @include textProp();
+}
+
+%border{
     border-radius: 10px;
 }
 
-.card-img-top:hover{ //esto se puede dejar así o tiene que ser también con "&"? como hago si es con "&"?
+.card{
+    @extend %border;
+}
+
+.card-img-top:hover{ 
     opacity: 0.6;
 }
 
+$botonEstilos:(
+    botonEstilos-color: nth($colores, 1),
+    botonEstilos-background-color: nth($colores, 2),
+    botonEstilos-border-color: nth($colores, 2),
+);
+
+
 .btn-new{
-    color: $color-fondo;
-    background-color: $color-principal;
-    border-color: $color-principal;
+    color: map-get($map: $botonEstilos, $key:botonEstilos-color);
+    background-color: map-get($map:$botonEstilos, $key:botonEstilos-background-color);
+    border-color: map-get($map:$botonEstilos, $key:botonEstilos-border-color);
     &:hover{
-        color: $color-fondo;
-        background-color: $color-secundario;
-        border-color: $color-secundario;
+        color: nth($colores, 1);
+        background-color:nth($colores, 3);
+        border-color: nth($colores, 3);
     }
 }
 
 .indexIframe{
-    border-radius: 10px;
+    @extend %border;
 }
 
 .footerIndex{
     width: 100%;
-    background-color: $color-principal;
+    background-color: nth($colores, 2);
     height: 100px;
     margin-top: 0px;
     display: flex;
@@ -122,11 +142,11 @@
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
-    color: black;
+    color: nth($colores, 4);
 }
 
 .bi-instagram:hover {
-    color: $color-fondo;
+    color: nth($colores, 1);
 }
 
 //----------------------------De acá para abajo no modifique todavía el CSS desde SCSS ---------------------------
@@ -208,6 +228,14 @@
 /*FIN DE CSS DE PRODUCTOS*/
 
 /*CSS DE SERVICIOS*/
+
+.textServicios{
+    @include textProp();
+}
+
+.textContacto{
+    @include textProp();
+}
 
 .cardTransform{
     transition: 0.8s;
