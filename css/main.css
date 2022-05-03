@@ -1,9 +1,230 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*Empieza info*/
+.mainInfo {
+  height: 270vh;
+  display: grid;
+  grid-template-areas: "h1 h1" "Info1 Info1" "imagenInfo imagenInfo" "info2 info2" "info3 info3";
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+
+.h1Principal {
+  grid-area: h1;
+  color: #232323;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Space Mono", monospace; }
+  .h1Principal:hover {
+    color: #FFDCEB; }
+
+.info1 {
+  grid-area: Info1;
+  text-align: center; }
+  .info1 .pInfo {
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #8D8D8D; }
+
+.h2Prop {
+  color: #232323;
+  font-size: 1.5rem;
+  font-family: "Space Mono", monospace;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+  .h2Prop:hover {
+    color: #FFDCEB; }
+
+.imagenInfo {
+  grid-area: imagenInfo;
+  text-align: center;
+  margin-bottom: 1rem; }
+  .imagenInfo .imagenInfo1 {
+    padding: 1rem;
+    width: 350px; }
+    .imagenInfo .imagenInfo1:hover {
+      opacity: 0.9; }
+
+.info2 {
+  text-align: left;
+  grid-area: info2;
+  margin-top: 1rem;
+  padding: 1rem; }
+  .info2 li {
+    font-family: "Space Mono", monospace; }
+  .info2 .pInfo2 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: "Space Mono", monospace; }
+
+.info3 {
+  text-align: left;
+  grid-area: info3;
+  margin-bottom: 1rem;
+  padding: 1rem; }
+  .info3 li {
+    font-family: "Space Mono", monospace; }
+  .info3 .pInfo3 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: "Space Mono", monospace; }
+
+@media only screen and (min-width: 600px) {
+  .mainInfo {
+    height: 250vh;
+    display: grid;
+    grid-template-areas: "h1 h1 h1 h1" "imagenInfo imagenInfo Info1 Info1" "info2 info2 info2 info2" "info3 info3 info3 info3";
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr; }
+  .h1Principal {
+    font-size: 2.5rem;
+    margin-bottom: 2rem; }
+  .imagenInfo .imagenInfo1 {
+    width: 400px; }
+  .info1 {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .info1 .pInfo {
+      font-size: 1.5rem; }
+  .h2Prop {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .info2 {
+    margin-top: 1rem;
+    padding: 1rem; }
+    .info2 .pInfo2 {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem; }
+  .info3 {
+    margin-bottom: 1rem;
+    padding: 1rem; }
+    .info3 .pInfo3 {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem; } }
+
+@media only screen and (min-width: 600px) and (min-width: 1024px) {
+  .mainInfo {
+    height: 260vh;
+    display: grid;
+    grid-template-areas: "h1 h1 h1 h1" "imagenInfo imagenInfo Info1 Info1" "info2 info2 info2 info2" "info3 info3 info3 info3";
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr; }
+  .h1Principal {
+    font-size: 2.5rem; }
+  .imagenInfo .imagenInfo1 {
+    width: 600px; }
+  .info1 {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .info1 .pInfo {
+      font-size: 1.7rem;
+      padding-right: 3rem; }
+  .h2Prop {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem; }
+  .info2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem; }
+  .info3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem; } }
+
+/*Finaliza info*/
+/*Empieza contacto*/
+.h1Contacto {
+  font-size: 2rem;
+  font-family: "Space Mono", monospace;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  color: #232323; }
+  .h1Contacto:hover {
+    color: #FFDCEB; }
+
+.article2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.indexIframeContacto {
+  border-radius: 10px;
+  width: 450px;
+  height: 450px; }
+
+@media only screen and (min-width: 600px) {
+  .h1Contacto {
+    font-size: 2rem; }
+  .indexIframeContacto {
+    width: 650px;
+    height: 450px; } }
+
+@media only screen and (min-width: 1024px) {
+  .h1Contacto {
+    font-size: 2.5rem; }
+  .indexIframeContacto {
+    width: 1150px;
+    height: 450px; } }
+
+/*Finaliza contacto*/
+/*Empieza productos*/
+.h2Productos {
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  color: #232323;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+  .h2Productos:hover {
+    color: #FFDCEB; }
+
+@media only screen and (min-width: 600px) {
+  .h2Productos {
+    font-size: 2.5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .h1Contacto {
+    font-size: 3rem; }
+  .cardProd {
+    transition: 0.8s; }
+    .cardProd:hover {
+      transform: scale(1.1); } }
+
+/*Finaliza productos*/
+/*Empieza servicios*/
+.textServicios {
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  color: #232323;
+  padding: 1rem; }
+
+@media only screen and (min-width: 600px) {
+  .textServicios {
+    font-size: 2.5rem; }
+  .cardTransform {
+    transition: 0.8s; }
+  .cardTransform:hover {
+    transform: scale(1.1); } }
+
+/*Finaliza servicios*/
 .divBody {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif; }
@@ -39,47 +260,9 @@
     .menu ul li:hover {
       transform: scale(1.1); }
 
-.bg-transparent {
-  background-color: transparent; }
-
-.navbar-light .navbar-brand {
-  color: #FFDCEB; }
-
-.logo {
-  text-align: center;
-  font-size: 3rem;
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 20px; }
-
-.nav-item {
-  text-transform: uppercase; }
-
-.textIndex {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #232323;
-  padding: 1rem; }
-
-.card, .indexIframe {
-  border-radius: 10px; }
-
-.card-img-top:hover {
-  opacity: 0.6; }
-
-.btn-new {
-  color: #FFFFFF;
-  background-color: #FFDCEB;
-  border-color: #FFDCEB; }
-  .btn-new:hover {
-    color: #FFFFFF;
-    background-color: #FFEBF8;
-    border-color: #FFEBF8; }
-
-.footerIndex {
+footer {
   width: 100%;
-  background-color: #FFDCEB;
+  background: #FFDCEB;
   height: 100px;
   margin-top: 0px;
   display: flex;
@@ -101,258 +284,45 @@
 .bi-instagram:hover {
   color: #FFFFFF; }
 
-/*CSS DE PRODUCTOS*/
-/*GRID DE PRODUCTOS*/
-.mainProd {
-  height: 80vh;
-  display: grid;
-  grid-template-areas: "img1 img2 img3 img5" "img6 img7 img8 img9";
-  justify-content: center;
-  column-gap: 30px;
-  row-gap: 40px; }
+.bg-transparent {
+  background-color: transparent; }
 
-.img1 {
-  grid-area: img1; }
+.navbar-light .navbar-brand {
+  color: #FFDCEB; }
 
-.img2 {
-  grid-area: img2; }
-
-.img3 {
-  grid-area: img3; }
-
-.img5 {
-  grid-area: img5; }
-
-.img6 {
-  grid-area: img6; }
-
-.img7 {
-  grid-area: img7; }
-
-.img8 {
-  grid-area: img8; }
-
-.img9 {
-  grid-area: img9; }
-
-/*FIN DE GRID PRODUCTOS*/
-.h2Prod {
-  font-size: 20px;
-  color: #FFDCEB;
-  text-align: left;
+.logo {
+  text-align: center;
+  font-size: 3rem;
   text-transform: uppercase;
-  margin: 30px;
-  padding: 25px; }
+  padding: 10px;
+  margin: 20px; }
 
-.img {
-  width: 330px;
-  height: 340px; }
+.nav-item {
+  text-transform: uppercase; }
 
-/*TRANSFORMACIONES DE PRODUCTOS*/
-.img {
-  transition: 0.8s; }
-
-.img:hover {
-  transform: scale(1.1); }
-
-/*FIN TRANSFORMACIONES DE PRODUCTOS*/
-/*FIN DE CSS DE PRODUCTOS*/
-/*CSS DE SERVICIOS*/
-.textServicios {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
+.textIndex {
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
   color: #232323;
   padding: 1rem; }
 
 .textContacto {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
   color: #232323;
   padding: 1rem; }
 
-.cardTransform {
-  transition: 0.8s; }
+.card, .indexIframe {
+  border-radius: 10px; }
 
-.cardTransform:hover {
-  transform: scale(1.1); }
+.card-img-top:hover {
+  opacity: 0.6; }
 
-/**FiN DE CSS SERVICIOS/
-
-/*CSS DE CONTACTO*/
-.mainContacto {
-  padding: 10px;
-  margin: 20px; }
-
-.formContacto {
-  margin: 10px;
-  padding: 10px;
-  font-size: 30px;
-  color: #FFDCEB; }
-
-.formContacto fieldset {
-  margin: 10px;
-  padding: 10px;
-  border: 3px solid #FFDCEB;
-  border-radius: 30px;
-  border-width: 10px; }
-
-.formContacto fieldset legend {
-  margin: 10px;
-  padding: 5px;
-  font-size: 50px;
-  text-transform: uppercase; }
-
-.div1Contacto {
-  margin: 5px;
-  padding: 5px; }
-
-.div1Contacto input {
-  border: 3px solid #FFDCEB;
-  border-radius: 5px;
-  margin: 5px;
-  padding: 5px; }
-
-.botonContacto {
-  margin: 3px;
-  padding: 10px;
-  text-align: right; }
-
-.botonContacto input {
-  margin: 10px;
-  padding: 8px;
-  border: 4px solid #FFDCEB;
-  border-radius: 40px;
-  font-size: 20px;
-  color: #FFDCEB;
-  text-transform: uppercase;
-  background-color: #FFFFFF; }
-
-/*FIN CSS DE CONTACTO*/
-/*CSS DE INFO*/
-.headerInfo {
-  display: block;
+.btn-new {
   color: #FFFFFF;
-  text-align: center; }
-
-.headerInfo h1 {
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
-  color: #FFDCEB;
-  font-size: 3rem;
-  text-transform: uppercase; }
-
-.menuInfo ul {
-  display: flex;
-  justify-content: center;
-  margin: 1rem; }
-
-.menuInfo ul li {
   background-color: #FFDCEB;
-  list-style: none;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin: 1rem;
-  padding: 0.8rem;
-  border-radius: 2rem; }
-
-.menuInfo ul li a {
-  text-decoration: none;
-  color: #FFFFFF; }
-
-.mainInfo {
-  padding: 2rem;
-  margin: 2rem;
-  text-align: center; }
-
-.pInfo {
-  display: inline-block;
-  font-size: 1.2rem;
-  color: #C5C0C0;
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center; }
-
-.imgInfo {
-  margin: 1rem;
-  padding: 1rem;
-  width: 500px; }
-
-/*GRIDS DE INFO*/
-.divBodyInfo {
-  background-color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  height: 80vh;
-  display: grid;
-  grid-template-areas: "header header" "pInfo pInfo" "imagen imagen" "footer footer";
-  justify-content: center; }
-
-.headerInfo {
-  grid-area: header; }
-
-.pInfo {
-  grid-area: pInfo; }
-
-.divImgInfo {
-  grid-area: imagen; }
-
-.divFooterInfo {
-  grid-area: footer;
-  font-size: 0.8rem; }
-
-/*FIN DE GRIDS DE INFO*/
-/*MEDIA QUERIES DE INFO*/
-@media only screen and (min-width: 800px) {
-  .divBodyInfo {
-    background-color: #FFFFFF;
-    height: 80vh;
-    display: grid;
-    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-    justify-content: center; }
-  .headerInfo {
+  border-color: #FFDCEB; }
+  .btn-new:hover {
     color: #FFFFFF;
-    display: flex;
-    justify-content: space-between; }
-  .headerInfo h1 {
-    text-align: center;
-    padding: 10px;
-    margin: 30px;
-    font-size: 3rem; }
-  .menuInfo ul {
-    margin: 30px; }
-  .menuInfo ul li {
-    font-size: 20px;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 50px; }
-  .mainInfo {
-    grid-area: main;
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: center; }
-  .imgInfo {
-    margin: 10px;
-    padding: 10px;
-    width: 800px; }
-  .pInfo {
-    text-align: left;
-    margin: 20px;
-    padding: 10px; } }
-
-/*FIN DE MEDIA QUERIES DE INFO */
-/*FIN DE CSS DE INFO */
-/*CSS del footer para todas las páginas*/
-.footerComun {
-  background-color: #FFDCEB;
-  padding: 30px;
-  margin: 200px 60px 30px 60px;
-  border-radius: 20px; }
-
-.footerComun img {
-  width: 45px; }
-
-.footerComun p {
-  color: #FFFFFF; }
+    background-color: #FFEBF8;
+    border-color: #FFEBF8; }

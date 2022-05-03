@@ -1,0 +1,43 @@
+/*Empieza productos*/
+
+@import "../utilities/variables";
+
+
+.h2Productos{
+    font-family: $fuente-terciaria;
+    font-size: 2rem;
+    color: nth($colores, 4);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    &:hover{
+        color: nth($colores, 2);
+    }
+}
+
+@media only screen and (min-width:600px){
+
+    .h2Productos{
+        font-size:2.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1024px){
+
+    .h1Contacto{
+        font-size: 3rem;
+    }
+
+    .cardProd{
+        transition: 0.8s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+
+
+/*Finaliza productos*/

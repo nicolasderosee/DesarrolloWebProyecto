@@ -1,0 +1,30 @@
+/*Empieza servicios*/
+
+@import "../utilities/variables";
+
+
+.textServicios{
+    font-family: $fuente-terciaria;
+    font-size: 2rem;
+    color: nth($colores, 4);
+    padding: 1rem;
+}
+
+@media only screen and (min-width:600px){
+    
+    .textServicios{
+        font-size: 2.5rem;
+    }
+
+    .cardTransform{
+        transition: 0.8s;
+    }
+    
+    .cardTransform:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+
+/*Finaliza servicios*/
