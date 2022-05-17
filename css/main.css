@@ -14,13 +14,11 @@
 
 .h1Principal {
   grid-area: h1;
-  color: #232323;
+  color: #FFDCEB;
   font-size: 2rem;
   margin-top: 1rem;
   text-align: center;
   font-family: "Space Mono", monospace; }
-  .h1Principal:hover {
-    color: #FFDCEB; }
 
 .info1 {
   grid-area: Info1;
@@ -32,13 +30,13 @@
     color: #8D8D8D; }
 
 .h2Prop {
-  color: #232323;
+  color: #FFDCEB;
   font-size: 1.5rem;
   font-family: "Space Mono", monospace;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
   .h2Prop:hover {
-    color: #FFDCEB; }
+    color: #232323; }
 
 .imagenInfo {
   grid-area: imagenInfo;
@@ -156,9 +154,7 @@
   text-align: center;
   margin: 2rem;
   padding: 1rem;
-  color: #232323; }
-  .h1Contacto:hover {
-    color: #FFDCEB; }
+  color: #FFDCEB; }
 
 .article2 {
   display: flex;
@@ -189,12 +185,19 @@
 .h2Productos {
   font-family: "Space Mono", monospace;
   font-size: 2rem;
-  color: #232323;
+  color: #FFDCEB;
   padding: 1rem;
   margin-bottom: 2rem;
   text-align: center; }
   .h2Productos:hover {
-    color: #FFDCEB; }
+    color: #232323; }
+
+.card-title {
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace; }
+
+.card-text {
+  font-family: "Space Mono", monospace; }
 
 @media only screen and (min-width: 600px) {
   .h2Productos {

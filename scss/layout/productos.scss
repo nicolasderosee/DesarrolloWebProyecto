@@ -6,13 +6,22 @@
 .h2Productos{
     font-family: $fuente-terciaria;
     font-size: 2rem;
-    color: nth($colores, 4);
+    color: nth($colores, 2);
     padding: 1rem;
     margin-bottom: 2rem;
     text-align: center;
     &:hover{
-        color: nth($colores, 2);
+        color: nth($colores, 4);
     }
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-family: $fuente-terciaria;
+}
+
+.card-text{
+    font-family: $fuente-terciaria;
 }
 
 @media only screen and (min-width:600px){

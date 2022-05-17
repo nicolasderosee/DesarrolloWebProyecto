@@ -18,14 +18,11 @@
 
 .h1Principal{
     grid-area: h1;
-    color: nth($colores, 4);
+    color: nth($colores, 2);
     font-size: 2rem;
     margin-top: 1rem;
     text-align: center;
     font-family: $fuente-terciaria;
-    &:hover{
-        color: nth($colores, 2);
-    }
 }
 
 .info1{
@@ -40,13 +37,13 @@
 }
 
 .h2Prop{
-    color: nth($colores, 4);
+    color: nth($colores, 2);
     font-size: 1.5rem;
     font-family: $fuente-terciaria;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     &:hover{
-        color: nth($colores, 2);
+        color: nth($colores, 4);
     }
 }
 
