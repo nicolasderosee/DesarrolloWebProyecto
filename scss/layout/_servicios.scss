@@ -6,8 +6,11 @@
 .textServicios{
     font-family: $fuente-terciaria;
     font-size: 2rem;
-    color: nth($colores, 4);
     padding: 1rem;
+    color: nth($colores, 2);
+    &:hover{
+        color: nth($colores, 3);
+    }
 }
 
 @media only screen and (min-width:600px){

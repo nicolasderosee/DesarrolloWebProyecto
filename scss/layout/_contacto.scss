@@ -8,6 +8,9 @@
     margin: 2rem;
     padding: 1rem;
     color:nth($colores, 2);
+    &:hover{
+        color: nth($colores, 3);
+    }
 }
 
 .article2{
@@ -26,7 +29,7 @@
 @media only screen and (min-width:600px){
 
     .h1Contacto{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .indexIframeContacto{
@@ -37,10 +40,6 @@
 }
 
 @media only screen and (min-width:1024px){
-
-    .h1Contacto{
-        font-size: 2.5rem;
-    }
 
     .indexIframeContacto{
         width:1150px; 

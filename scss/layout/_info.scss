@@ -23,6 +23,9 @@
     margin-top: 1rem;
     text-align: center;
     font-family: $fuente-terciaria;
+    &:hover{
+        color: nth($colores, 3);
+    }
 }
 
 .info1{
@@ -43,7 +46,7 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     &:hover{
-        color: nth($colores, 4);
+        color: nth($colores, 3);
     }
 }
 

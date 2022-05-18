@@ -19,6 +19,8 @@
   margin-top: 1rem;
   text-align: center;
   font-family: "Space Mono", monospace; }
+  .h1Principal:hover {
+    color: #FFEBF8; }
 
 .info1 {
   grid-area: Info1;
@@ -36,7 +38,7 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
   .h2Prop:hover {
-    color: #232323; }
+    color: #FFEBF8; }
 
 .imagenInfo {
   grid-area: imagenInfo;
@@ -155,6 +157,8 @@
   margin: 2rem;
   padding: 1rem;
   color: #FFDCEB; }
+  .h1Contacto:hover {
+    color: #FFEBF8; }
 
 .article2 {
   display: flex;
@@ -168,14 +172,12 @@
 
 @media only screen and (min-width: 600px) {
   .h1Contacto {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
   .indexIframeContacto {
     width: 650px;
     height: 450px; } }
 
 @media only screen and (min-width: 1024px) {
-  .h1Contacto {
-    font-size: 2.5rem; }
   .indexIframeContacto {
     width: 1150px;
     height: 450px; } }
@@ -190,7 +192,7 @@
   margin-bottom: 2rem;
   text-align: center; }
   .h2Productos:hover {
-    color: #232323; }
+    color: #FFEBF8; }
 
 .card-title {
   text-transform: uppercase;
@@ -216,8 +218,10 @@
 .textServicios {
   font-family: "Space Mono", monospace;
   font-size: 2rem;
-  color: #232323;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #FFDCEB; }
+  .textServicios:hover {
+    color: #FFEBF8; }
 
 @media only screen and (min-width: 600px) {
   .textServicios {
@@ -232,36 +236,8 @@
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif; }
 
-.headerComun {
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-between; }
-  .headerComun h1 {
-    text-align: center;
-    color: #FFDCEB;
-    font-size: 3rem;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 30px; }
-
-.menu ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 30px; }
-  .menu ul li {
-    background-color: #FFDCEB;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 50px;
-    transition: 1s; }
-    .menu ul li a {
-      text-decoration: none;
-      color: #FFFFFF; }
-    .menu ul li:hover {
-      transform: scale(1.1); }
+.nav-item:hover {
+  color: #FFEBF8; }
 
 footer {
   width: 100%;
@@ -292,6 +268,8 @@ footer {
 
 .navbar-light .navbar-brand {
   color: #FFDCEB; }
+  .navbar-light .navbar-brand:hover {
+    color: #FFEBF8; }
 
 .logo {
   text-align: center;
@@ -305,15 +283,19 @@ footer {
 
 .textIndex {
   font-family: "Space Mono", monospace;
-  font-size: 40px;
-  color: #232323;
-  padding: 1rem; }
+  color: #FFDCEB;
+  padding: 1rem;
+  font-size: 25px; }
+  .textIndex:hover {
+    color: #FFEBF8; }
 
 .textContacto {
   font-family: "Space Mono", monospace;
-  font-size: 40px;
-  color: #232323;
-  padding: 1rem; }
+  color: #FFDCEB;
+  padding: 1rem;
+  font-size: 25px; }
+  .textContacto:hover {
+    color: #FFEBF8; }
 
 .card, .indexIframe {
   border-radius: 10px; }
@@ -329,3 +311,15 @@ footer {
     color: #FFFFFF;
     background-color: #FFEBF8;
     border-color: #FFEBF8; }
+
+@media only screen and (min-width: 600px) {
+  .textIndex {
+    font-size: 35px; }
+  .textContacto {
+    font-size: 35px; } }
+
+@media only screen and (min-width: 1024px) {
+  .textIndex {
+    font-size: 40px; }
+  .textContacto {
+    font-size: 40px; } }
