@@ -170,23 +170,23 @@
 
 @media only screen and (min-width: 700px) and (min-width: 1024px) {
   .mainInfo {
-    height: 280vh;
+    height: 330vh;
     display: grid;
     grid-template-areas: "imagenInfo imagenInfo Info1 Info1" "info2 info2 info2 info2" "info3 info3 info3 info3";
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 0.7fr 1fr; }
+    grid-template-rows: 1fr 0.5fr 1fr; }
   .h1Principal {
     font-size: 2.5rem; }
   .imagenInfo .imagenInfo1 {
-    width: 660px; }
+    width: 500px; }
   .info1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     .info1 .pInfo {
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       padding-right: 3rem; }
   .h2Prop {
     text-align: center;
@@ -197,17 +197,40 @@
     margin-right: 2rem;
     padding: 2rem; }
     .info2 .pInfo2 {
-      font-size: 1.3rem; }
+      font-size: 1.1rem; }
     .info2 .pInfoX {
-      font-size: 1.3rem; }
+      font-size: 1.1rem; }
   .info3 {
     margin-left: 2rem;
     margin-right: 2rem;
     padding: 2rem; }
     .info3 .pInfo3 {
-      font-size: 1.3rem; }
+      font-size: 1.1rem; }
     .info3 .pInfoX {
-      font-size: 1.3rem; } }
+      font-size: 1.1rem; } }
+
+@media only screen and (min-width: 1280px) {
+  .mainInfo {
+    height: 275vh;
+    display: grid;
+    grid-template-areas: "imagenInfo imagenInfo Info1 Info1" "info2 info2 info2 info2" "info3 info3 info3 info3";
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.8fr 1fr; }
+  .h1Principal {
+    font-size: 2.5rem; }
+  .imagenInfo .imagenInfo1 {
+    width: 660px; }
+  .info1 .pInfo {
+    font-size: 2rem; }
+  .info2 .pInfo2 {
+    font-size: 1.3rem; }
+  .info2 .pInfoX {
+    font-size: 1.3rem; }
+  .info3 .pInfo3 {
+    font-size: 1.3rem; }
+  .info3 .pInfoX {
+    font-size: 1.3rem; } }
 
 /*Finaliza info*/
 /*Empieza contacto*/
