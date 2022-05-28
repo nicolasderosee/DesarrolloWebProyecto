@@ -3,21 +3,19 @@
 @import "../utilities/variables";
 
 .mainInfo{
-    height: 280vh;
+    height: 390vh;
     display: grid;
-    grid-template-areas:"h1 h1"
-                        "Info1 Info1"
+    grid-template-areas:"Info1 Info1"
                         "imagenInfo imagenInfo"
                         "info2 info2"
                         "info3 info3";
     justify-content: center;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 
 .h1Principal{
-    grid-area: h1;
     color: nth($colores, 2);
     font-size: 2rem;
     margin-top: 1rem;
@@ -44,7 +42,7 @@
     font-size: 1.5rem;
     font-family: $fuente-terciaria;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     &:hover{
         color: nth($colores, 3);
     }
@@ -70,6 +68,12 @@
     font-family: $fuente-terciaria;
 }
 
+.olInfo{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 .info2{
     text-align: left;
@@ -80,6 +84,9 @@
         font-family: $fuente-terciaria;
     }
     .pInfo2{
+        @include propPinfo();
+    }
+    .pInfoX{
         @include propPinfo();
     }
 }
@@ -95,59 +102,104 @@
     .pInfo3{
         @include propPinfo();
     }
+    .pInfoX{
+        @include propPinfo();
+    }
 }
 
-@media only screen and (min-width:600px){
+
+@media only screen and (min-width:390px){
     .mainInfo{
-        height: 250vh;
+        height: 300vh;
+    }
+
+}
+
+@media only screen and (min-width:400px){
+    .mainInfo{
+        height: 260vh;
+    }
+
+}
+
+
+@media only screen and (min-width:500px){
+    .mainInfo{
+        height: 275vh;
+    }
+
+}
+
+@media only screen and (min-width:700px){
+    .mainInfo{
+        height: 375vh;
         display: grid;
-        grid-template-areas:"h1 h1 h1 h1"
-                            "imagenInfo imagenInfo Info1 Info1"
+        grid-template-areas:"imagenInfo imagenInfo imagenInfo imagenInfo"
+                            "Info1 Info1 Info1 Info1"
                             "info2 info2 info2 info2"
                             "info3 info3 info3 info3";
         justify-content: center;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 2fr 2fr 2fr 2fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 2fr;
     }
 
     .h1Principal{
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
     }
 
     .imagenInfo{
         .imagenInfo1{
-            width: 400px;
+            width: 600px;
         }
     }
 
+    .olInfo{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    
+    @mixin propPinfoX{
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.6rem;
+        font-family: $fuente-terciaria;
+    }
+    
+
     .info1{
-        height: 65vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        margin-top: 2rem;
+        grid-area: Info1;
         .pInfo{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
     }
 
     .h2Prop{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
     @mixin propPinfo {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         margin-top: 1rem;
         margin-bottom: 1.5rem;
     }
     
     .info2{
-        margin-top: 1rem;
         padding: 1rem;
         .pInfo2{
             @include propPinfo();
+        }
+        .pInfoX{
+            @include propPinfoX();
         }
     }
     
@@ -157,19 +209,35 @@
         .pInfo3{
             @include propPinfo();
         }
+        .pInfoX{
+            @include propPinfoX();
+        }
+    }
+
+    @media only screen and (min-width:800px){
+        .mainInfo{
+            height: 305vh;
+        }
+    
+    }
+
+    @media only screen and (min-width:900px){
+        .mainInfo{
+            height: 240vh;
+        }
+    
     }
 
     @media only screen and (min-width:1024px){
         .mainInfo{
-            height: 260vh;
+            height: 280vh;
             display: grid;
-            grid-template-areas:"h1 h1 h1 h1"
-                                "imagenInfo imagenInfo Info1 Info1"
+            grid-template-areas:"imagenInfo imagenInfo Info1 Info1"
                                 "info2 info2 info2 info2"
                                 "info3 info3 info3 info3";
             justify-content: center;
             grid-template-columns: repeat(4,1fr);
-            grid-template-rows: 2fr 2fr 2fr 2fr;
+            grid-template-rows: 1fr 0.7fr 1fr;
         }
 
         .h1Principal{
@@ -178,15 +246,15 @@
     
         .imagenInfo{
             .imagenInfo1{
-                width: 600px;
+                width: 660px;
             }
         }
 
         .info1{
-            height: 90vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             .pInfo{
                 font-size: 1.7rem;
                 padding-right: 3rem;
@@ -199,16 +267,38 @@
             font-size: 2rem;
         }
 
+
+        @mixin propPinfo {
+            font-size: 1.3rem;
+        }
+
+        @mixin propPinfoX {
+            font-size: 1.3rem;
+        }
+
+
         .info2{
             margin-left: 2rem;
             margin-right: 2rem;
             padding: 2rem;
+            .pInfo2{
+                @include propPinfo();
+            }
+            .pInfoX{
+                @include propPinfoX();
+            }
         }
 
         .info3{
             margin-left: 2rem;
             margin-right: 2rem;
             padding: 2rem;
+            .pInfo3{
+                @include propPinfo();
+            }
+            .pInfoX{
+                @include propPinfoX();
+            }
         }
     }
 }
